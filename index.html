@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>じゃんけんプログラム</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="janken_message1">じゃんけん</div>
+
+    <div style="line-height: 0.5em"><br/></div>
+    <form>あなたの手：
+      <select id="janken_select" style="border:1px solid #cccccc;">
+        <option>ぐー</option>
+        <option>ちょき</option>
+        <option>ぱー</option>
+      </select>
+
+      <input type="button" id="janken_button" value=" この手で勝負 " onclick="StartJankenGame()">
+    </form>
+  </div>
+
+  <div id="janken_message2">結果: どうなるかな？</div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
